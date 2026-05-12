@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Space Grotesk", sans-serif;
+
+  --color-brand-navy: #0A192F;
+  --color-brand-emerald: #064E3B;
+  --color-brand-gold: #D4AF37;
+  --color-brand-sand: #F5F2ED;
+  --color-brand-ivory: #F8FAFC;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-brand-sand text-brand-navy antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+.luxury-gradient {
+  background: linear-gradient(135deg, #0A192F 0%, #064E3B 100%);
+}
+
+.gold-text-gradient {
+  background: linear-gradient(to right, #D4AF37, #F5D17E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
